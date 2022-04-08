@@ -29,10 +29,6 @@ body {
 /* End Global Rules */
 
 /* Start Components */
-.color--white {
-  color: white !important;
-}
-
 .flex--icon-center {
   display: flex;
   align-items: center;
@@ -100,6 +96,12 @@ body {
   padding-bottom: 14px;
 }
 
+.card__title:hover{
+  cursor: pointer;
+  color: var(--hover-color);
+  text-shadow: 0px 0px 1px var(--hover-color);
+}
+
 .card__description {
   color: var(--soft-blue);
   font-weight: 400;
@@ -116,6 +118,7 @@ body {
 .card__eth {
   font-weight: 600;
   color: var(--hover-color);
+  text-shadow: 0px 0px 2px var(--hover-color);
 }
 
 .card__time {
@@ -147,6 +150,14 @@ body {
   color: var(--soft-blue);
   font-weight: 700;
   font-size: var(--Fs-p);
+}
+.author__name > span{
+  color: white;
+}
+.author__name > span:hover{
+  cursor: pointer;
+  color: var(--hover-color);
+  text-shadow: 0px 0px 1px var(--hover-color);
 }
 
 /* --End Card Footer */
